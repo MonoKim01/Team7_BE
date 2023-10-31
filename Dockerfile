@@ -12,6 +12,6 @@ RUN ./gradlew clean build -x test
 
 COPY --from=build /home/gradle/project/build/libs/TILy-0.0.1-SNAPSHOT.jar .
 
-ENV DATABASE_URL=jdbc:mariadb://mariadb/tily
+ENV DATABASE_URL=jdbc:mariadb://mariadb/krampoline
 
 CMD ["java", "-jar", "-Dspring.profiles.active=prod", "TILy-0.0.1-SNAPSHOT.jar"]
