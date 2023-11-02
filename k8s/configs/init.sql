@@ -1,0 +1,3 @@
+CREATE SCHEMA IF NOT EXISTS `tily_db` DEFAULT CHARACTER SET utf8mb4;
+
+USE `tily__db`;
