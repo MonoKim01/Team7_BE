@@ -12,7 +12,7 @@ RUN gradle init
 
 RUN gradle wrapper
 
-#RUN ./gradlew clean build -x test
+RUN ./gradlew clean build -x test
 
 #COPY --from=build /home/gradle/project/build/libs/TILy-0.0.1-SNAPSHOT.jar .
 
